@@ -48,10 +48,63 @@ body{
   color: #000;
   font-size: 1.5rem;
   transition: font-size 0.2s ease-out;
-  /* font-weight: 800; */
 }
 .navbar ul li a:hover{
   font-size: 1.75rem;
+}
+/* navigation bars for small screens */
+.navbar .checkbtn{
+  font-size: 30px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+/* responsive navbar */
+@media (max-width:952px){
+  /* for phones */
+  .navbar ul li a{
+    font-size: 16px;
+  }
+}
+@media(max-width:858px){
+  /* for phones */
+  .navbar:hover{
+    background-color:  rgba(255,255,255,0.8);
+  }
+  .navbar .checkbtn{
+    display: block;
+    font-size: 40px;
+  }
+  .navbar ul{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    top: 3.009rem;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  .navbar ul li{
+    margin: 4rem;
+  }
+  .navbar ul li a{
+    font-size: 40px;
+  }
+  .navbar ul li a:hover{
+    font-size: 50px;
+    font-weight: 800;
+    text-shadow: 0 0 10px #fff;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
 }
 /* Home section */
 .welcome-section{
@@ -88,6 +141,7 @@ body{
   padding: 2.5rem 0 1rem 0;
   font-size: 2.5rem;
   text-align: center;
+  text-decoration: underline;
 }
 .projects .project-box{
   display: flex;
@@ -140,6 +194,10 @@ body{
 }
 /* contact section */
 .contact-me{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 90vh;
   background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.1)),url(../img/contact\ background.jpg);
   background-size: cover;
@@ -153,7 +211,6 @@ body{
   font-size: 3.5rem;
 }
 .contact-me p{
-  text-align: center;
   font-size: 2rem;
 }
 .contact-me ul{
@@ -161,6 +218,7 @@ body{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
 }
 .contact-me ul li{
   padding: 2rem;
