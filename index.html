@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/link.js"></script>
+  <script src="js/preview.js"></script>
   <script src="https://kit.fontawesome.com/dd1e421363.js" crossorigin="anonymous"></script>
   <title>Armaan Raut</title>
 </head>
@@ -30,34 +32,40 @@
     <!-- project section -->
     <section id="projects" class="projects">
       <h1>Check out some of my works</h1>
+      <!-- over display box -->
+      <div id="dis-box" class="dis-box">
+        <div id="link-div" class="link-div">
+          <a id="dis-link" class="dis-link" href="https://codepen.io/soullesscoder/full/GRovZGN" target="_blank" onclick="proLink()">Gordan Ramsay Tribute</a>
+        </div>
+      </div>
       <!-- project box -->
       <div class="project-box">
 
         <div class="project-item">
-          <a class="project-tile" href="https://codepen.io/soullesscoder/full/GRovZGN" target="_blank">
-            <img class="project-img" src="img/tribute.png" alt="GR Tribute page">
+          <a class="project-tile" href="https://codepen.io/soullesscoder/full/GRovZGN" target="_blank" onmouseover="setLink(this)">
+            <img class="project-img" src="img/tribute.png" alt="Gordan Ramsay Tribute" onmouseover = "display(this)">
             <span>Gordan Ramsay Tribute</span>
           </a>
         </div>
 
         <div class="project-item">
-          <a class="project-tile" href="https://codepen.io/soullesscoder/full/vYLdLmx" target="_blank">
-            <img class="project-img" src="img/Survey form.png" alt="CFC Survey Form">
-            <span>Chelsea Survey Form</span>
+          <a class="project-tile" href="https://codepen.io/soullesscoder/full/vYLdLmx" target="_blank" onmouseover="setLink(this)">
+            <img class="project-img" src="img/Survey form.png" alt="Chelsea FC Survey Form" onmouseover = "display(this)">
+            <span>Chelsea FC Survey Form</span>
           </a>
         </div>
 
         <div class="project-item">
-          <a class="project-tile" href="https://codepen.io/soullesscoder/full/LYGQBOq" target="_blank">
-            <img class="project-img" src="img/Product Landing.png" alt="Paws Product Landing">
+          <a class="project-tile" href="https://codepen.io/soullesscoder/full/LYGQBOq" target="_blank" onmouseover="setLink(this)">
+            <img class="project-img" src="img/Product Landing.png" alt="Paws: Product landing page" onmouseover = "display(this)">
             <span>Paws: Product landing page</span>
           </a>
         </div>
 
         <div class="project-item">
-          <a class="project-tile" href="https://codepen.io/soullesscoder/full/ExPOrLL" target="_blank">
-            <img class="project-img" src="img/technical.png" alt="Technical Document">
-            <span>Technical Document</span>
+          <a class="project-tile" href="https://codepen.io/soullesscoder/full/ExPOrLL" target="_blank" onmouseover="setLink(this)">
+            <img class="project-img" src="img/technical.png" alt="Dummy Technical Document"onmouseover = "display(this)" >
+            <span>Dummy Technical Document</span>
           </a>
         </div>
 
